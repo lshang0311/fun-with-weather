@@ -1,3 +1,9 @@
+# A test set for the weather simulator
+#
+# Created by lshang on Aug 18, 2016
+#
+
+
 test.simulator <- function() {
   checkTrue(TRUE, define_constants())
   checkEquals(5, length(generate_timestamps(5)))
