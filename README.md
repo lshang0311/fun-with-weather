@@ -17,10 +17,10 @@ Ok, some simple explanation for the fun journey.
     Key features
        - Highly configurable for generating ground truth/training samples
           - Markov Chain to simulate weather conditions, rain/snow/sunny
-	  - Random number generator to simulate numerical variables, temperature/pressure/humidity
-	  - Define training set size
-	  - Define positions
-	  - Define weather profiles, high humidity in rain condition etc.
+          - Random number generator to simulate numerical variables, temperature/pressure/humidity
+          - Define training set size
+          - Define positions
+          - Define weather profiles, e.g. high humidity in rain condition.
        - Structured for future extensions
        - Use predictive modelling to generate measurements
        - Feature engineering
