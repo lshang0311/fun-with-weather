@@ -22,6 +22,6 @@ Ok, some simple explanation for the fun journey.
 
     Usage
        - Put all files (run_weather_simulation.R, karkovchain.cpp, config.json) in the same 
-         directory. Load run_weather_simulation.R and click "Source" or press Ctrl+Shift+S, 
-	 simulated weather samples should be displayed in the console.
+         directory. Load run_weather_simulation.R into RStudio and click "Source" or press 
+	 Ctrl+Shift+S, simulated weather samples should be displayed in the console.
 
