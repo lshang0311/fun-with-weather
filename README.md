@@ -23,6 +23,7 @@ Ok, some simple explanation for the fun journey.
 	  - Define weather profiles, high humidity in rain condition etc.
        - Structured for future extensions
        - Use predictive modelling to generate measurements
+       - Feature engineering
        - FP (functional programming) in R
 
     Simulation methodology 
