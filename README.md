@@ -14,6 +14,17 @@ Ok, some simple explanation for the fun journey.
        - Linear Discriminant Analysis (LDA)
        - Linear regression 
 
+    Key features
+       - Highly configurable for generating ground truth/training samples
+          - Markov Chain to simulate weather conditions, rain/snow/sunny
+	  - Random number generator to simulate numerical variables, temperature/pressure/humidity
+	  - Define training set size
+	  - Define positions
+	  - Define weather profiles, high humidity in rain condition etc.
+       - Structured for future extensions
+       - Use predictive modelling to generate measurements
+       - FP (functional programming) in R
+
     Simulation methodology 
        - Generate sythetic data as the ground truth
        - Use the ground truth as the data to build predictive models (LDA, LM)
@@ -21,7 +32,24 @@ Ok, some simple explanation for the fun journey.
 	 measurements (weather condition, temperature, pressure, humidity)
 
     Usage
-       - Put all files (run_weather_simulation.R, Markovchain.cpp, config.json) in the same 
-         directory. Load run_weather_simulation.R into RStudio and click "Source" or press Ctrl+Shift+S, 
-         simulated weather samples should be displayed in the console.
+       - Assume these libraries have been installed: Rcpp, jsonlite, MASS, RUnit
+       - For simplicity, all relevant files are placed in the same directory. Load run_weather_simulation.R 
+         into RStudio and click "Source" or press Ctrl+Shift+S, weather samples from two test scenarios ("Sydney
+	 weather over time" and "Some random time&location on planet Earth") should be 
+         displayed in the console.
+       - To run test, load run_tests.R into RStudio and click "Source" or press Ctrl+Shift+S, a test report should be produced
+         in the console.
+       - Users may also want to modified or add test scenarios in the script run_weather_simulation.
+
+    TODO
+       So, we had some fun. An arbitray location and time from the blue planet can be selected for producing
+       measurements. May be we should add more locations in the config.json to make the measurments more plausible?
+       We can't predict the weather in London with high accuracy giving our models are trained with three Aussie cities only?
+
+       Assume this simulator is not completely insane, maybe we should modify config.json to produce some data
+       for the Martian gamers?
+
+       While it's fun to code in R, a version in Java or Scala could be more fun?
+
+
 
