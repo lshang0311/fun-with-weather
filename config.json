@@ -1,0 +1,106 @@
+{
+  "training": {
+    "scenario" : "Earth",
+    "reproducible" : true,
+    
+    "NUMBER_OF_TRAINING_SAMPLES_PER_LOCATION" : 50,
+    "TRAINING_START_TIME": "2015-10-01 00:00:00"
+  },
+
+  "weather": {
+    "measurements" : ["Temperature", "Pressure", "Humidity"],
+    "states" : ["R", "N", "S"],
+    "stateFullNames": {
+      "R" : "Rain", 
+      "N" : "Snow",
+      "S" : "Sunny"
+    },
+    "transitionMatrix": [
+        [0.30, 0.35, 0.35],
+        [0.35, 0.25, 0.40],
+        [0.35, 0.25, 0.40]
+     ]
+  },
+  
+  "location": [
+      {
+        "Location" : "Sydney",
+        "Position": [-33.86, 151.21, 39]
+      },
+      {
+        "Location" : "Melbourne",
+        "Position": [-37.83, 144.98, 7]
+      },
+      {
+        "Location" : "Perth",
+        "Position": [-34.92, 138.62, 48]
+      }
+  ],
+  
+  "condition_profile": {
+    "Snow": [
+      {
+         "name" : "Temperature",
+         "value" : [-50, 10],
+         "unit" : "celsius",
+         "type" : "numeric"
+      },
+      {
+         "name" : "Pressure",
+         "value" : [500, 1200],
+         "unit" : "hPa",
+         "type" : "numeric"
+      },
+      {
+         "name" : "Humidity",
+         "value" : [30, 80],
+         "unit" : "%",
+         "type" : "numeric"
+      }
+    ],
+    
+    "Rain": [
+      {
+         "name" : "Temperature",
+         "value" : [5.0, 40.0],
+         "unit" : "celsius",
+         "type" : "numeric"
+      },
+      {
+         "name" : "Pressure",
+         "value" : [500, 1200],
+         "unit" : "hPa",
+         "type" : "numeric"
+      },
+      {
+         "name" : "Humidity",
+         "value" : [80, 99],
+         "unit" : "%",
+         "type" : "numeric"
+      }
+    ],
+    
+    "Sunny": [
+      {
+         "name" : "Temperature",
+         "value" : [-5, 40],
+         "unit" : "celsius",
+         "type" : "numeric"
+      },
+      {
+         "name" : "Pressure",
+         "value" : [500, 1200],
+         "unit" : "hPa",
+         "type" : "numeric"
+      },
+      {
+         "name" : "Humidity",
+         "value" : [40, 80],
+         "unit" : "%",
+         "type" : "numeric"
+      }
+    ]
+    
+  }
+  
+}
