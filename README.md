@@ -27,7 +27,7 @@ Ok, some simple explanation for the fun journey.
        - FP (functional programming) in R
 
     Simulation methodology 
-       - Generate sythetic data as the ground truth
+       - Generate synthetic data as the ground truth
        - Use the ground truth as the data to build predictive models (LDA, LM)
        - Feed new data (time&location) the established predictive models to generate 
 	 measurements (weather condition, temperature, pressure, humidity)
