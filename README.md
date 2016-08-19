@@ -40,11 +40,11 @@ Ok, some simple explanation for the fun journey.
          displayed in the console.
        - To run test, load run_tests.R into RStudio and click "Source" or press Ctrl+Shift+S, a test report should be produced
          in the console.
-       - Users may also want to modified or add test scenarios in the script run_weather_simulation.
+       - Users may also want to modify or add test scenarios in the script run_weather_simulation.
 
     TODO
        So, we had some fun. An arbitray location and time from the blue planet can be selected for producing
-       measurements. May be we should add more locations in the config.json to make the measurments more plausible?
+       measurements. Maybe we should add more locations in the config.json to make the measurments more plausible?
        We can't predict the weather in London with high accuracy giving our models are trained with three Aussie cities only?
 
        Assume this simulator is not completely insane, maybe we should modify config.json to produce some data
